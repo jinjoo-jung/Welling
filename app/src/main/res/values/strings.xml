@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Welling</string>
+
+    <string name="main_btm_nav_home_title">Home</string>
+    <string name="main_btm_nav_informtation">Information</string>
+    <string name="main_btm_nav_emotion_notes">Emotion notes</string>
+    <string name="main_btm_nav_challenge">Challenge</string>
+
 </resources>

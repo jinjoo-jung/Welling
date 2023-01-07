@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_main_btm_nav_home"
+        android:icon="@drawable/home"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:checkable="true"
+        android:title="@string/main_btm_nav_home_title" />
+
+    <item
+        android:id="@+id/menu_main_btm_information"
+        android:icon="@drawable/information"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:title="@string/main_btm_nav_informtation" />
+
+    <item
+        android:id="@+id/menu_main_btm_emotion_notes"
+        android:icon="@drawable/emotionnotes"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:title="@string/main_btm_nav_emotion_notes" />
+
+    <item
+        android:id="@+id/menu_main_btm_challenge"
+        app:showAsAction="always"
+        android:icon="@drawable/challeng"
+        android:enabled="true"
+        android:title="@string/main_btm_nav_challenge"></item>
+
+
+</menu>
