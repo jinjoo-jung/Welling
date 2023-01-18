@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+  >
+
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar_home_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:menu="@menu/menu_toolbar"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/welling">
+    </ImageView>
+</androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/iv_home_userimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/userimg"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_home_name"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingLeft="40dp"
+        android:paddingTop="30dp">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_home_ment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="착하게 살자 어쩌고!"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/iv_home_userimg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_home_name"
+        android:paddingTop="40dp"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2022년 11월 23일"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_home_ment"
+        app:layout_constraintStart_toEndOf="@+id/iv_home_userimg"
+        android:paddingTop="30dp"
+        android:textColor="@color/black">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_home_emotionalgraph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Emotional Graph"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/iv_home_userimg"
+        android:layout_margin="20dp"
+        android:paddingTop="10dp"></TextView>
+
+<ImageView
+    android:id="@+id/iv_home_graph"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/graph"
+    app:layout_constraintTop_toBottomOf="@+id/tv_home_emotionalgraph"
+    android:layout_margin="20dp"></ImageView>
+
+
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:text="내 감정 그래프 보러가기"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_home_graph"
+        android:background="@drawable/button_background"
+        android:layout_margin="10dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_home_wellbeing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Well-being"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        android:layout_margin="20dp"
+        android:paddingTop="10dp">
+    </TextView>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
